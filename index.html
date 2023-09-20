@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit Simulation</title>
+  </head>
+  <body>
+    <div id="tooltip">
+      Click anywhere, drag, and release to create a planet.
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="canvas.js"></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: black;
+      }
+
+      canvas {
+        display: block;
+      }
+
+      #tooltip {
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        text-align: center;
+        pointer-events: none;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        transition-property: "opacity";
+        transition: 0.2s;
+      }
+    </style>
+  </body>
+</html>
